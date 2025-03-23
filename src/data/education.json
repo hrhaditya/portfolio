@@ -1,0 +1,30 @@
+
+[
+  {
+    "id": 1,
+    "institution": "Rochester Institute of Technology",
+    "degree": "Master of Science in Data Science",
+    "location": "Rochester, NY",
+    "period": "Aug 2022 - May 2025",
+    "description": "Comprehensive program covering advanced data science concepts, machine learning, and data analytics methodologies.",
+    "achievements": [
+      "Courses: Machine Learning, Artificial Intelligence, Data Mining Analytics, Visual Analytics",
+      "Mathematical and Statistical Foundations for Data Science",
+      "Databases - Design Implementation",
+      "Big Data Tools"
+    ]
+  },
+  {
+    "id": 2,
+    "institution": "SRM Institute of Science and Technology",
+    "degree": "Bachelor of Engineering, Computer Science and Engineering",
+    "location": "Chennai, India",
+    "period": "Aug 2018 - May 2022",
+    "description": "Strong foundation in computer science principles, algorithms, and programming fundamentals.",
+    "achievements": [
+      "Specialized in data structures and algorithms",
+      "Completed capstone project in machine learning",
+      "Participated in technical competitions and hackathons"
+    ]
+  }
+]

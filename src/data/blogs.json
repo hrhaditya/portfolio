@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "title": "Turning Amazon Reviews into Business Insights",
+    "description": "Exploring how to extract, analyze, and leverage Amazon product reviews for valuable business intelligence and strategic decision-making.",
+    "image": "/blogs/amazon-reviews.jpg",
+    "date": "March 15, 2023",
+    "url": "https://medium.com/@mallipudiaditya/turning-amazon-reviews-into-business-insights-2e8917ad4b36",
+    "tags": ["Data Analytics", "NLP", "Business Intelligence", "E-commerce"]
+  },
+  {
+    "id": 2,
+    "title": "Visual Analytics for Crime Investigation: Advanced Analytical Insights from the 2014 VAST Challenge",
+    "description": "Detailed analysis of how visual analytics techniques were applied to solve complex crime investigation scenarios from the 2014 VAST Challenge, revealing hidden patterns in large datasets.",
+    "image": "/blogs/crime-investigation.jpg",
+    "date": "January 22, 2023",
+    "url": "https://medium.com/@mallipudiaditya/visual-analytics-for-crime-investigation-advanced-analytical-insights-from-the-2014-vast-challenge-974e384764e3",
+    "tags": [
+      "Visual Analytics",
+      "Crime Investigation",
+      "Data Visualization",
+      "Network Analysis"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Cricket Between India and Pakistan: More Than Just a Sport",
+    "description": "An emotional exploration of the cricket rivalry between India and Pakistan, analyzing sentiment patterns in fan reactions and the cultural significance of these historic matches.",
+    "image": "/blogs/cricket-analysis.jpg",
+    "date": "November 10, 2022",
+    "url": "https://medium.com/@mallipudiaditya/introduction-cricket-between-india-and-pakistan-is-more-than-just-a-sport-its-an-emotional-a21f5cf7bcbe",
+    "tags": [
+      "Sports Analytics",
+      "Cultural Analysis",
+      "Sentiment Analysis",
+      "Cricket"
+    ]
+  }
+]

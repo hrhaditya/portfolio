@@ -1,0 +1,31 @@
+
+[
+  {
+    "id": 1,
+    "company": "Venture Creations Incubator",
+    "title": "Data Engineer/Scientist, Intern",
+    "location": "Rochester, NY",
+    "period": "Feb 2023 - Present",
+    "description": "Working closely with C-suite executives to implement data-driven solutions and cloud infrastructure, improving operational efficiency and project delivery.",
+    "achievements": [
+      "Collaborated weekly with C-suite executives, resulting in a 25% improvement in project delivery timelines",
+      "Implemented cloud infrastructure onboarding using Ansible, CloudFormation, and AWS Lambda with 100% seamless deployment on EKS",
+      "Designed ML pipeline with Docker, Kubernetes, and Terraform (AWS CI/CD via Jenkins) for optimal model deployment",
+      "Developed real-time data pipeline with BeautifulSoup, Selenium, and AWS ECS, improving data ingestion by 40%",
+      "Transformed 25+ Tableau dashboards, enhancing SQL-powered athlete performance tracking by 15%"
+    ]
+  },
+  {
+    "id": 2,
+    "company": "Verzeo",
+    "title": "Data Analyst, Intern",
+    "location": "Bangalore, India",
+    "period": "Aug 2020 - Oct 2020",
+    "description": "Designed and developed data analytics solutions and interactive dashboards to support business decision-making processes.",
+    "achievements": [
+      "Conceptualized and designed interactive dashboards in R using Shiny and ggplot2 for sales teams",
+      "Refined data preprocessing tasks using Pandas and Dask, including outlier detection and missing value imputation",
+      "Improved data quality for downstream analysis through feature scaling and normalization techniques"
+    ]
+  }
+]

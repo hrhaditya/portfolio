@@ -1,0 +1,49 @@
+
+{
+  "name": "Harshaditya Kumar Mallipudi",
+  "title": "Data Engineer / Data Scientist",
+  "bio": "Data professional with strong expertise in building data pipelines, machine learning models, and actionable insights. Specializing in Python, AWS, and data visualization with a focus on creating impactful solutions.",
+  "avatar": "/avatar.png",
+  "location": "Rochester, NY",
+  "email": "hm3799@g.rit.edu",
+  "phone": "585-825-0412",
+  "github": "https://github.com/hkmallipudi",
+  "linkedin": "https://linkedin.com/in/harshaditya-kumar",
+  "twitter": "https://twitter.com/harshkumar",
+  "website": "https://harshadityakumar.dev",
+  "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        { "name": "Python", "level": 95 },
+        { "name": "SQL", "level": 90 },
+        { "name": "R", "level": 85 },
+        { "name": "PySpark", "level": 85 },
+        { "name": "Bash", "level": 80 }
+      ]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "items": [
+        { "name": "AWS", "level": 90 },
+        { "name": "Docker", "level": 85 },
+        { "name": "Kubernetes", "level": 80 },
+        { "name": "Terraform", "level": 80 },
+        { "name": "Jenkins CI/CD", "level": 75 }
+      ]
+    },
+    {
+      "category": "Data & ML",
+      "items": [
+        { "name": "Data Engineering", "level": 90 },
+        { "name": "Tableau", "level": 85 },
+        { "name": "scikit-learn", "level": 85 },
+        { "name": "Statistical Analysis", "level": 80 },
+        { "name": "NLP", "level": 75 }
+      ]
+    }
+  ],
+  "certifications": [
+    "AWS Certified AI Practitioner"
+  ]
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Visual Analytics for Crime Investigation",
+    "description": "Network analysis of 1M+ email records from the 2014 VAST Challenge to detect anomalies and identify hidden communication patterns for criminal investigation.",
+    "image": "/projects/crime-analytics.jpg",
+    "tags": ["Python", "NetworkX", "Gephi", "Tableau", "Apache Airflow"],
+    "category": "Data Analytics",
+    "github": "https://github.com/hkmallipudi/crime-investigation",
+    "liveUrl": "https://crime-investigation-demo.dev",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Cricket Sentiment Analysis",
+    "description": "NLP-based sentiment analysis of 200K+ YouTube comments from India vs Pakistan cricket matches, identifying trends in fan excitement, controversy, and national pride.",
+    "image": "/projects/cricket-sentiment.jpg",
+    "tags": ["Python", "NLP", "Hugging Face", "AWS Lambda", "Tableau"],
+    "category": "NLP",
+    "github": "https://github.com/hkmallipudi/cricket-sentiment",
+    "liveUrl": "https://cricket-sentiment.dev",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Amazon Review Sentiment Analysis",
+    "description": "Real-time sentiment analysis pipeline for 150K+ Amazon product reviews using Azure Data Factory and Apache Spark with 85% accuracy in sentiment classification.",
+    "image": "/projects/amazon-sentiment.jpg",
+    "tags": ["Python", "TensorFlow", "Apache Spark", "Azure", "Power BI"],
+    "category": "Machine Learning",
+    "github": "https://github.com/hkmallipudi/amazon-sentiment",
+    "liveUrl": "https://amazon-sentiment.dev",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "title": "Health Tales: Predicting Health Risks",
+    "description": "AWS-based pipeline processing 991K+ health records to predict diabetes and cardiovascular risks with 72.1% accuracy using Random Forest algorithms.",
+    "image": "/projects/health-tales.jpg",
+    "tags": ["Python", "AWS S3", "AWS Glue", "AWS Athena", "QuickSight"],
+    "category": "Health Analytics",
+    "github": "https://github.com/hkmallipudi/health-tales",
+    "liveUrl": "https://health-tales.dev",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Predicting Tech Sales Success (NPS)",
+    "description": "Snowflake data warehouse analyzing 5K+ tech sales rep records to predict high Net Promoter Scores with 75% accuracy using Random Forest modeling.",
+    "image": "/projects/tech-sales.jpg",
+    "tags": ["R", "Tidyverse", "Snowflake", "Random Forest", "Power BI"],
+    "category": "Business Intelligence",
+    "github": "https://github.com/hkmallipudi/tech-sales",
+    "liveUrl": "https://tech-sales.dev",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "House Price Analysis in Ames, Iowa",
+    "description": "Analysis of 1,460 house sales using Apache Spark and SciPy, revealing homes with central air sell for 12% higher to assist real estate pricing strategies.",
+    "image": "/projects/house-price.jpg",
+    "tags": ["Python", "SciPy", "Apache Spark", "SAS", "JMP"],
+    "category": "Regression Analysis",
+    "github": "https://github.com/hkmallipudi/house-price",
+    "liveUrl": "https://house-price.dev",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "title": "Real-Time Cryptocurrency ETL Pipeline",
+    "description": "Built an end-to-end ETL pipeline that extracts and processes 1,500+ cryptocurrency price records daily via API, storing them in PostgreSQL for scalable analytics. Automated data ingestion using Apache Airflow, archiving 30+ MB of structured data per month in AWS S3, enabling historical trend analysis for crypto market insights.",
+    "image": "/projects/crypto-etl.jpg",
+    "tags": [
+      "Python",
+      "PostgreSQL",
+      "AWS S3",
+      "Apache Airflow",
+      "Docker",
+      "Pandas"
+    ],
+    "category": "Data Engineering",
+    "github": "https://github.com/hkmallipudi/crypto-etl",
+    "liveUrl": "https://crypto-etl.dev",
+    "featured": true
+  },
+  {
+    "id": 8,
+    "title": "AI-Powered Resume Screening & Job Matching",
+    "description": "Developed an AI-driven resume screening system processing 500+ resumes and matching them to 100+ job descriptions using OpenAI GPT and vector embeddings in Pinecone. Built a FastAPI-powered backend with a Streamlit recruiter dashboard, reducing manual screening time by 60%, and automated resume ingestion via AWS Lambda for real-time processing.",
+    "image": "/projects/resume-screening.jpg",
+    "tags": [
+      "Python",
+      "NLP",
+      "OpenAI GPT",
+      "Pinecone",
+      "FastAPI",
+      "Streamlit",
+      "PostgreSQL"
+    ],
+    "category": "AI Applications",
+    "github": "https://github.com/hkmallipudi/resume-screening",
+    "liveUrl": "https://resume-screening.dev",
+    "featured": true
+  },
+  {
+    "id": 9,
+    "title": "Customer Churn Prediction Pipeline",
+    "description": "Built a real-time customer churn prediction pipeline, streaming 10,000+ transactions daily via Apache Kafka into Snowflake and processing 500+ customer records per batch. Trained a Random Forest classifier with 78% accuracy, identifying high-risk churn customers, and visualized insights in Tableau, enabling targeted retention strategies.",
+    "image": "/projects/churn-prediction.jpg",
+    "tags": [
+      "Python",
+      "Snowflake",
+      "Apache Kafka",
+      "AWS Redshift",
+      "Apache Airflow",
+      "Tableau"
+    ],
+    "category": "Machine Learning",
+    "github": "https://github.com/hkmallipudi/churn-prediction",
+    "liveUrl": "https://churn-prediction.dev",
+    "featured": false
+  },
+  {
+    "id": 10,
+    "title": "Customer Segmentation & Sales Forecasting",
+    "description": "Implemented K-Means clustering to segment 5,000+ customers based on purchase behavior, improving targeted marketing and personalized recommendations. Developed a Prophet-based forecasting model predicting monthly sales trends with 85% accuracy, analyzing 100,000+ transaction records, and automated workflow execution with Apache Airflow.",
+    "image": "/projects/customer-segmentation.jpg",
+    "tags": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "Snowflake",
+      "Scikit-learn",
+      "Prophet",
+      "Power BI"
+    ],
+    "category": "Business Intelligence",
+    "github": "https://github.com/hkmallipudi/customer-segmentation",
+    "liveUrl": "https://customer-segmentation.dev",
+    "featured": false
+  }
+]
