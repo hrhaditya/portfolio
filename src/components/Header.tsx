@@ -51,10 +51,10 @@ const Header = () => {
           ))}
           <Button>
             <a
-              href="/src/data/RESUME_HARSH.pdf"
+              href="/RESUME_HARSH.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              download
+              download="Harsh_Mallipudi_Resume.pdf"
             >
               Resume
             </a>
@@ -86,10 +86,10 @@ const Header = () => {
             ))}
             <Button className="w-full">
               <a
-                href="/src/data/RESUME_HARSH.pdf"
+                href="/RESUME_HARSH.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                download
+                download="Harsh_Mallipudi_Resume.pdf"
               >
                 Resume
               </a>

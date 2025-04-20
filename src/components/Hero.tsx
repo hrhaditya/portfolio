@@ -99,14 +99,6 @@ const Hero = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href={personal.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors hover:scale-110 transition-transform duration-300"
-              >
-                <Twitter size={20} />
-              </a>
-              <a
                 href={`mailto:${personal.email}`}
                 className="text-muted-foreground hover:text-primary transition-colors hover:scale-110 transition-transform duration-300"
               >

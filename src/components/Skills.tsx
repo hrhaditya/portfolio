@@ -85,14 +85,14 @@ const Skills = () => {
                       <div key={skill.name} className="space-y-2">
                         <div className="flex justify-between">
                           <span className="font-medium">{skill.name}</span>
-                          <span className="text-muted-foreground">
+                          {/* <span className="text-muted-foreground">
                             {animatedSkills[skill.name] ? `${skill.level}%` : '0%'}
-                          </span>
+                          </span> */}
                         </div>
-                        <Progress 
+                        {/* <Progress 
                           value={animatedSkills[skill.name] ? skill.level : 0} 
                           className="h-2 transition-all duration-1000 ease-out"
-                        />
+                        /> */}
                       </div>
                     ))}
                   </div>

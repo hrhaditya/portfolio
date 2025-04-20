@@ -23,10 +23,10 @@ const Index = () => {
       <Header />
       <main className="overflow-hidden">
         <Hero />
+        <Blogs />
         <div className="bg-gradient-to-b from-background to-secondary/10 py-8">
           <Projects />
         </div>
-        <Blogs />
         <Skills />
         <div className="bg-gradient-to-b from-secondary/10 to-background py-8">
           <ExperienceTimeline />

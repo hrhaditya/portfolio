@@ -1,21 +1,41 @@
+import { useState, useEffect, useRef } from "react";
+import { Button } from "./ui/button";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
+import { Badge } from "./ui/badge";
+import { ExternalLink, Github } from "lucide-react";
+import projects from "../data/projects.json";
 
-import { useState, useEffect, useRef } from 'react';
-import { Button } from './ui/button';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/card';
-import { Badge } from './ui/badge';
-import { ExternalLink, Github } from 'lucide-react';
-import projects from '../data/projects.json';
+// Helper function to get the correct image path
+const getImagePath = (path: string) => {
+  try {
+    // For images in the src directory, use dynamic import
+    // Remove leading slash if present
+    const cleanPath = path.startsWith("/") ? path.substring(1) : path;
+    return new URL(`/${cleanPath}`, import.meta.url).href;
+  } catch (error) {
+    console.error("Error loading image:", path, error);
+    return "/placeholder.svg";
+  }
+};
 
 const Projects = () => {
-  const [category, setCategory] = useState('All');
+  const [category, setCategory] = useState("All");
   const [visibleProjects, setVisibleProjects] = useState(projects);
   const sectionRef = useRef<HTMLElement>(null);
-  
+
   useEffect(() => {
-    if (category === 'All') {
+    if (category === "All") {
       setVisibleProjects(projects);
     } else {
-      setVisibleProjects(projects.filter(project => project.category === category));
+      setVisibleProjects(
+        projects.filter((project) => project.category === category)
+      );
     }
   }, [category]);
 
@@ -24,14 +44,14 @@ const Projects = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
+            entry.target.classList.add("is-visible");
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    const elements = document.querySelectorAll('.animate-on-scroll');
+    const elements = document.querySelectorAll(".animate-on-scroll");
     elements.forEach((el) => observer.observe(el));
 
     return () => {
@@ -39,18 +59,21 @@ const Projects = () => {
     };
   }, [visibleProjects]);
 
-  const categories = ['All', ...Array.from(new Set(projects.map(p => p.category)))];
+  const categories = [
+    "All",
+    ...Array.from(new Set(projects.map((p) => p.category))),
+  ];
 
   return (
     <section id="projects" className="py-20 bg-secondary/30" ref={sectionRef}>
       <div className="section-container">
         <h2 className="section-title animate-on-scroll">My Projects</h2>
-        
+
         <div className="flex flex-wrap gap-2 mb-8 animate-on-scroll">
           {categories.map((cat) => (
             <Button
               key={cat}
-              variant={category === cat ? 'default' : 'outline'}
+              variant={category === cat ? "default" : "outline"}
               size="sm"
               onClick={() => setCategory(cat)}
               className="mb-2"
@@ -62,16 +85,19 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {visibleProjects.map((project, index) => (
-            <Card 
-              key={project.id} 
+            <Card
+              key={project.id}
               className="animate-on-scroll overflow-hidden flex flex-col h-full"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src={project.image || "/placeholder.svg"} 
+              <div className="relative h-56 overflow-hidden">
+                <img
+                  src={getImagePath(project.image) || "/placeholder.svg"}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-contain bg-gray-100 dark:bg-gray-800"
+                  onError={(e) => {
+                    e.currentTarget.src = "/placeholder.svg";
+                  }}
                 />
               </div>
               <CardHeader>
@@ -94,9 +120,9 @@ const Projects = () => {
               </CardContent>
               <CardFooter className="flex justify-between">
                 <Button variant="outline" size="sm" asChild>
-                  <a 
-                    href={project.github} 
-                    target="_blank" 
+                  <a
+                    href={project.github}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-1"
                   >
@@ -105,9 +131,9 @@ const Projects = () => {
                   </a>
                 </Button>
                 <Button size="sm" asChild>
-                  <a 
-                    href={project.liveUrl} 
-                    target="_blank" 
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-1"
                   >

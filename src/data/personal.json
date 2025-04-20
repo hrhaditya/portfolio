@@ -1,4 +1,3 @@
-
 {
   "name": "Harshaditya Kumar Mallipudi",
   "title": "Data Engineer / Data Scientist",
@@ -7,10 +6,9 @@
   "location": "Rochester, NY",
   "email": "hm3799@g.rit.edu",
   "phone": "585-825-0412",
-  "github": "https://github.com/hkmallipudi",
-  "linkedin": "https://linkedin.com/in/harshaditya-kumar",
-  "twitter": "https://twitter.com/harshkumar",
-  "website": "https://harshadityakumar.dev",
+  "github": "https://github.com/hrhaditya",
+  "linkedin": "https://www.linkedin.com/in/harshadityakumar/",
+
   "skills": [
     {
       "category": "Languages",
@@ -43,7 +41,5 @@
       ]
     }
   ],
-  "certifications": [
-    "AWS Certified AI Practitioner"
-  ]
+  "certifications": ["AWS Certified AI Practitioner"]
 }

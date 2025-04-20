@@ -11,6 +11,18 @@ import { Badge } from "./ui/badge";
 import { ExternalLink, Calendar } from "lucide-react";
 import blogs from "../data/blogs.json";
 
+// Helper function to get the correct image path
+const getImagePath = (path: string) => {
+  try {
+    // Remove leading slash if present
+    const cleanPath = path.startsWith("/") ? path.substring(1) : path;
+    return new URL(`/${cleanPath}`, import.meta.url).href;
+  } catch (error) {
+    console.error("Error loading image:", path, error);
+    return "/placeholder.svg";
+  }
+};
+
 const Blogs = () => {
   const [tag, setTag] = useState("All");
   const [visibleBlogs, setVisibleBlogs] = useState(blogs);
@@ -75,11 +87,14 @@ const Blogs = () => {
               className="animate-on-scroll overflow-hidden flex flex-col h-full"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="h-48 overflow-hidden">
+              <div className="relative h-56 overflow-hidden">
                 <img
-                  src={blog.image || "/placeholder.svg"}
+                  src={getImagePath(blog.image) || "/placeholder.svg"}
                   alt={blog.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-contain bg-gray-100 dark:bg-gray-800"
+                  onError={(e) => {
+                    e.currentTarget.src = "/placeholder.svg";
+                  }}
                 />
               </div>
               <CardHeader>
